@@ -1,0 +1,58 @@
+/* BASIC STYLE RESET : 
+---------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* GENERAL
+---------------------------------------------*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* NAVBAR 
+---------------------------------------------*/
+nav header {
+  padding: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.links-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.links-div div {
+  padding: 3px 0;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* MAIN 
+---------------------------------------------*/
+main {
+  width: 90%;
+  margin: 30px auto;
+}
+
+main header {
+  padding-bottom: 5px;
+}
+
+main p {
+  padding: 20px 0;
+}
+
+ol {
+  margin: 0 30px;
+}
+
+main img {
+  width: 90%;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
