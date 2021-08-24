@@ -1,44 +1,87 @@
 /* VARIABLES
 ---------------------------------------------*/
 :root {
+  --main-gradient: linear-gradient(150deg, #6072ff, #ff5ddf);
+  --main-color: #ff5ddf;
+  --secondary-color: #6072ff;
+  --page-background: #1b1b3a;
   --color-1: #828a95;
-  --color-2: #1b1b3a;
   --color-3: #422951;
   --color-4: #fffaff;
-  --color-5: #d8315b;
+  --color-5: #b91c43;
   --color-6: #d5c9df;
   --color-7: #dcb8cb;
-  --color-8: #ff3366;
-  --gradient-1: linear-gradient(150deg, #6072ff, #ff5ddf);
+  --color-8: #fd5f67;
+  --color-11: #262647;
+  --color-12: #32324e;
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-main header {
-  border-bottom: 3px solid grey;
-}
-
+/* COLORS & BACKGROUNDS
+---------------------------------------------*/
 body {
-  background: var(--color-2);
+  background: var(--page-background);
   color: var(--color-4);
 }
 
 nav {
-  background: var(--gradient-1);
-  height: 230px;
+  background: var(--main-gradient);
 }
 
 .links-div {
   background: var(--color-4);
-  border-top: 10px solid var(--color-6);
-  border-bottom: 10px solid var(--color-6);
 }
 
 .links-div a {
-  color: hotpink;
-  background-image: var(--gradient-1);
+  color: var(--main-color);
+  background-image: var(--main-gradient);
   background-size: 100%;
+  background-clip: border-box;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+.gradient-line,
+footer,
+img {
+  background: var(--main-gradient);
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+pre,
+.special-p {
+  background: var(--color-11);
+}
+
+code {
+  background: var(--color-12);
+}
+
+.tag {
+  color: var(--color-8);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* BORDERS
+---------------------------------------------*/
+.links-div {
+  border-top: 10px solid var(--color-6);
+  border-bottom: 10px solid var(--color-6);
+}
+
+.color--1,
+.special-p {
+  border-left: 5px solid var(--secondary-color);
+}
+
+.color--2 {
+  border-left: 5px solid var(--main-color);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
