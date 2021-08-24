@@ -6,7 +6,12 @@
 */
 
 body {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 
 nav header {
@@ -21,4 +26,17 @@ nav header {
 main header {
   text-align: center;
   font-size: 2rem;
+}
+
+p,
+li {
+  line-height: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+li {
+  font-weight: 300;
 }
