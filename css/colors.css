@@ -1,0 +1,44 @@
+/* VARIABLES
+---------------------------------------------*/
+:root {
+  --color-1: #828a95;
+  --color-2: #1b1b3a;
+  --color-3: #422951;
+  --color-4: #fffaff;
+  --color-5: #d8315b;
+  --color-6: #d5c9df;
+  --color-7: #dcb8cb;
+  --color-8: #ff3366;
+  --gradient-1: linear-gradient(150deg, #6072ff, #ff5ddf);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+main header {
+  border-bottom: 3px solid grey;
+}
+
+body {
+  background: var(--color-2);
+  color: var(--color-4);
+}
+
+nav {
+  background: var(--gradient-1);
+  height: 230px;
+}
+
+.links-div {
+  background: var(--color-4);
+  border-top: 10px solid var(--color-6);
+  border-bottom: 10px solid var(--color-6);
+}
+
+.links-div a {
+  color: hotpink;
+  background-image: var(--gradient-1);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
