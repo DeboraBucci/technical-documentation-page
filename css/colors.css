@@ -14,6 +14,9 @@
   --color-8: #fd5f67;
   --color-11: #262647;
   --color-12: #32324e;
+  --color-13: #d6cec1;
+  --color-14: #6bc8fd;
+  --color-15: #4d4d4d;
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
@@ -24,14 +27,40 @@ body {
   color: var(--color-4);
 }
 
-nav {
-  background: var(--main-gradient);
+pre {
+  color: var(--color-1);
+  background: var(--color-11);
+}
+
+code {
+  background: var(--color-12);
 }
 
 .links-div {
   background: var(--color-4);
 }
 
+.main-color {
+  color: var(--main-color);
+}
+
+.special-p {
+  background: var(--color-11);
+}
+
+.tag {
+  color: var(--color-8);
+}
+
+.info {
+  color: var(--color-14);
+}
+
+.text {
+  color: var(--color-4);
+}
+
+/* gradient use : */
 .links-div a {
   color: var(--main-color);
   background-image: var(--main-gradient);
@@ -43,29 +72,12 @@ nav {
   -moz-text-fill-color: transparent;
 }
 
-.gradient-line,
+nav,
 footer,
-img {
+img,
+.gradient-line {
   background: var(--main-gradient);
 }
-
-.main-color {
-  color: var(--main-color);
-}
-
-pre,
-.special-p {
-  background: var(--color-11);
-}
-
-code {
-  background: var(--color-12);
-}
-
-.tag {
-  color: var(--color-8);
-}
-
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* BORDERS
@@ -84,4 +96,19 @@ code {
   border-left: 5px solid var(--main-color);
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* SCROLLBAR
+---------------------------------------------*/
+::-webkit-scrollbar-track {
+  background: var(--color-12);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-15);
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
