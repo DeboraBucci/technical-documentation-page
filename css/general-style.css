@@ -9,6 +9,9 @@
 
 /* GENERAL
 ---------------------------------------------*/
+::-webkit-scrollbar {
+  width: 15px;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* NAVBAR 
@@ -67,6 +70,10 @@ ol {
 
 li {
   padding: 0 0 20px 10px;
+}
+
+pre {
+  overflow-x: auto;
 }
 
 pre,
