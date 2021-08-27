@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   </head>
   <body>
     <div class="big-div">
@@ -61,7 +65,7 @@
       <!-- MAIN
     ============================================================================== -->
       <main id="main-doc">
-        <!-- INTRODUCTION -->
+        <!-- INTRODUCTION -------------------------------- -->
         <section class="main-section" id="introduction">
           <!-- header -->
           <header>Introduction</header>
@@ -84,6 +88,7 @@
             HTML and its functions.
           </p>
         </section>
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
         <!-- SO WHAT IS HTML? ---------------------------- -->
         <section class="main-section" id="so_what_is_html?">
@@ -127,7 +132,9 @@
           <p>Let's explore this paragraph element a bit further.</p>
 
           <!-- IMAGE -->
-          <img src="./images/grumpy-cat-small.png" alt="" />
+          <div class="img-div">
+            <img src="./images/grumpy-cat-small.png" alt="" />
+          </div>
           <!-- xxxxx -->
 
           <p>The main parts of our element are as follows:</p>
@@ -165,7 +172,9 @@
           <p>Elements can also have attributes that look like the following:</p>
 
           <!-- IMAGE -->
-          <img src="./images/grumpy-cat-attribute-small.png" alt="" />
+          <div class="img-div">
+            <img src="./images/grumpy-cat-attribute-small.png" alt="" />
+          </div>
           <!-- xxxxx -->
 
           <p>
@@ -197,8 +206,8 @@
           </ol>
           <!-- xxxxxxxxxxxx -->
 
-          <!-- SPECIAL-P CLASS HERE : -->
-          <p class="special-p">
+          <!-- NOTE CLASS HERE : -->
+          <p class="note color--1">
             <b>Note</b>
             : Simple attribute values that don't contain ASCII whitespace (or
             any of the characters
@@ -383,39 +392,295 @@
 
         <!-- IMAGES -------------------------------------- -->
         <section class="main-section" id="images">
+          <!-- header -->
           <header>Images</header>
           <div class="gradient-line"></div>
+
+          <!-- content -->
+          <p>
+            Let's turn our attention to the
+            <code>&lt;img&gt;</code> element again.
+          </p>
+
+          <!-- PRE ELEMENT -->
+          <pre
+            class="color--2"
+          >&lt;<span class="tag">img</span> src="<span class="info">images/firefox-icon.png</span>" alt="<span class="info">test my image</span>"&gt;</pre>
+          <!-- xxxxxxxxxxx -->
+
+          <p>
+            As we said before, it embeds an image into our page in the position
+            it appears. It does this via the <code>src</code>
+            <small>(source)</small> attribute, which contains the path to our
+            image file.
+          </p>
+          <p>
+            We have also included an <code>alt</code>
+            <small>(alternative)</small> attribute. In this attribute, you
+            specify descriptive text for users who cannot see the image,
+            possibly because of the <em>following reasons:</em>
+          </p>
+
+          <!-- ORDERED LIST -->
+          <ol>
+            <li>
+              They are visually impaired. Users with significant visual
+              impairments often use tools called screen readers to read out the
+              alt text to them.
+            </li>
+            <li>
+              Something has gone wrong causing the image not to display. For
+              example, try deliberately changing the path inside your
+              <code>src</code> attribute to make it incorrect. If you save and
+              reload the page, you should see something like this in place of
+              the image:
+              <div class="img-div">
+                <img src="./images/alt-text-example.png" alt="" />
+              </div>
+            </li>
+          </ol>
+          <!-- xxxxxxxxxxxx -->
+
+          <p>
+            The keywords for alt text are "descriptive text". The alt text you
+            write should provide the reader with enough information to have a
+            good idea of what the image conveys. In this example, our current
+            text of "My test image" is no good at all. A much better alternative
+            for our Firefox logo would be "The Firefox logo: a flaming fox
+            surrounding the Earth."
+          </p>
+          <p>Try coming up with some better alt text for your image now.</p>
+
+          <!-- PRE ELEMENT -->
+          <pre
+            class="color--1"
+          >Find out more about accessibility in MDN's <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">accessibility learning module</a>.</pre>
+          <!-- xxxxxxxxxxx -->
+
         </section>
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
         <!-- MARKING UP TEXT ----------------------------- -->
         <section class="main-section" id="marking_up_text">
+          <!-- header -->
           <header>Marking up Text</header>
           <div class="gradient-line"></div>
+
+          <!-- content -->
+          <p>
+            This section will cover some of the essential HTML elements you'll
+            use for marking up the text.
+          </p>
+
+          <!-- H2 ELEMENT -->
+          <h2>Headings</h2>
+          <!-- xxxxxxxxxx -->
+
+          <p>
+            Heading elements allow you to specify that certain parts of your
+            content are headings — or subheadings. In the same way that a book
+            has the main title, chapter titles, and subtitles, an HTML document
+            can too.
+          </p>
+          <p>
+            HTML contains 6 heading levels, <code>&lt;h1&gt;</code> –
+            <code>&lt;h6&gt;</code>, although you'll commonly only use 3 to 4 at
+            most:
+          </p>
+
+          <!-- PRE ELEMENT -->
+          <pre class="color--2">
+&lt;<span class="tag">h1</span>&gt;<span class="text">My main title</span>&lt;/<span class="tag">h1</span>&gt;
+
+&lt;<span class="tag">h1</span>&gt;<span class="text">My top level heading</span>&lt;/<span class="tag">h1</span>&gt;
+
+&lt;<span class="tag">h1</span>&gt;<span class="text">My subheading</span>&lt;/<span class="tag">h1</span>&gt;
+
+&lt;<span class="tag">h1</span>&gt;<span class="text">My sub-subheading</span>&lt;/<span class="tag">h1</span>&gt;
+          </pre>
+          <!-- xxxxxxxxxxx -->
+
+          <p>
+            Now try adding a suitable title to your HTML page just above your
+            <code>&lt;img&gt;</code> element.
+          </p>
+
+          <!-- NOTE CLASS HERE :-->
+          <p class="color--1 note">
+            <b>Note:</b> You'll see that your heading level 1 has an implicit
+            style. Don't use heading elements to make text bigger or bold,
+            because they are used for accessibility and other reasons such as
+            SEO. Try to create a meaningful sequence of headings on your pages,
+            without skipping levels.
+          </p>
+          <!-- xxxxxxxxxxx -->
+
+          <!-- H2 ELEMENT -->
+          <h2>Paragraphs</h2>
+          <!-- xxxxxxxxxx -->
+
+          <p>
+            As explained above, <code>&lt;p&gt;</code> elements are for
+            containing paragraphs of text; you'll use these frequently when
+            marking up regular text content:
+          </p>
+
+          <!-- PRE ELEMENT -->
+          <pre
+            class="color--2"
+          >&lt;<span class="tag">p</span>&gt;<span class="text">This is a single paragraph</span>&lt;/<span class="tag">p</span>&gt;</pre>
+          <!-- xxxxxxxxxxx -->
+
+          <p>
+            Add your sample text into one or a few paragraphs, placed directly
+            below your <code>&lt;img&gt; element.</code>
+          </p>
+
+          <!-- H2 ELEMENT -->
+          <h2>Lists</h2>
+          <!-- xxxxxxxxxx -->
+
+          <p>
+            A lot of the web's content is lists and HTML has special elements
+            for these. Marking up lists always consists of at least 2 elements.
+          </p>
+          <p>
+            <em>
+              The most common list types are ordered and unordered lists:</em
+            >
+          </p>
+
+          <!-- UNORDERED LIST -->
+          <ul>
+            <li>
+              <b class="main-color">Unordered lists</b> are for lists where the
+              order of the items doesn't matter, such as a shopping list. These
+              are wrapped in a <code>&lt;ul&gt;</code> element.
+            </li>
+            <li>
+              <b class="main-color">Ordered lists</b> are for lists where the
+              order of the items does matter, such as a recipe. These are
+              wrapped in an <code>&lt;ol&gt;</code> element.
+            </li>
+          </ul>
+          <!-- xxxxxxxxxxxxxx -->
+
+          <p>
+            Each item inside the lists is put inside an <code>&lt;li&gt;</code>
+            <small>(list item)</small> element.
+          </p>
+
+          <p>
+            <em>
+              For example, if we wanted to turn the part of the following
+              paragraph fragment into a list:</em
+            >
+          </p>
+
+          <!-- PRE ELEMENT -->
+          <pre
+            class="color--1"
+          >&lt;<span class="tag">p</span>&gt;<span class="text">At Mozilla, we’re a global community of technologists, thinkers, and builders working together ... </span>&lt;/<span class="tag">p</span>&gt;</pre>
+          <!-- xxxxxxxxxxx -->
+
+          <p><em>We could modify the markup to this:</em></p>
+
+          <!-- PRE ELEMENT -->
+          <pre
+            class="color--2"
+          >&lt;<span class="tag">p</span>&gt;<span class="text">At Mozilla, we're a global community of</span>&lt;/<span class="tag">p</span>&gt;
+
+          &lt;<span class="tag">ul</span>&gt; 
+            &lt;<span class="tag">li</span>&gt;<span class="text">technologists</span>&lt;/<span class="tag">p</span>&gt; 
+            &lt;<span class="tag">li</span>&gt;<span class="text">thinkers</span>&lt;/<span class="tag">p</span>&gt; 
+            &lt;<span class="tag">li</span>&gt;<span class="text">builders</span>&lt;/<span class="tag">p</span>&gt;
+
+&lt;<span class="tag">p</span>&gt;<span class="text">working together ... </span>&lt;/<span class="tag">p</span>&gt;</pre>
+          <!-- xxxxxxxxxxx -->
+          <p>Try adding an ordered or unordered list to your example page.</p>
         </section>
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
         <!-- LINKS --------------------------------------- -->
         <section class="main-section" id="links">
+          <!-- header -->
           <header>Links</header>
           <div class="gradient-line"></div>
+
+          <!-- content -->
+          <p>
+            Links are very important — they are what makes the web a web! To add
+            a link, we need to use a simple element — <code>&lt;a&gt;</code> —
+            "a" being the short form for "anchor". To make text within your
+            paragraph into a link, <em>follow these steps:</em>
+          </p>
+
+          <!-- ORDERED LIST -->
+          <ol>
+            <li>
+              <p>Choose some text. We chose the text "Mozilla Manifesto".</p>
+            </li>
+            <li>
+              <p>
+                Wrap the text in an <code>&lt;a&gt;</code> element, as shown
+                below:
+              </p>
+              <pre
+                class="color--1"
+              >&lt;<span class="tag">a</span>&gt;<span class="text">Mozilla Manifesto</span>&lt;/<span class="tag">a</span>&gt;</pre>
+            </li>
+            <li>
+              <p>
+                Give the <code>&lt;a&gt;</code> element an
+                <code>href</code> attribute, as shown below:
+              </p>
+              <pre class="color--2">&lt;<span class="tag">a</span> href=""&gt;<span class="text">Mozilla Manifesto</span>&lt;/<span class="tag">a</span>&gt;</pre></pre>
+            </li>
+            <li><p>Fill in the value of this attribute with the web address that you want the link to link to:</p>
+              <pre class="color--1">&lt;<span class="tag">a</span> href="<span class="info">https://www.mozilla.org/en-US/about/manifesto/</span>"&gt;<span class="text">Mozilla Manifesto</span>&lt;/<span class="tag">a</span>&gt;</pre></pre>
+            </li>
+          </ol>
+          <!-- xxxxxxxxxxxx -->
+
+          <p>You might get unexpected results if you omit the <code>https://</code> or <code>http://</code> part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.</p>
+
+          <p class="note color--2"><b>Note:</b> href might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for <span class="main-color">h</span>ypertext <span class="main-color">ref</span>erence.</p>
+
+          <p>Add a link to your page now, if you haven't already done so.</p>
         </section>
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
         <!-- CONCLUSION ---------------------------------- -->
         <section class="main-section" id="conclusion">
+          <!-- header -->
           <header>Conclusion</header>
           <div class="gradient-line"></div>
+
+          <!-- content -->
+          <p><em>If you have followed all the instructions in this article, you should end up with a page that looks like the one below:</em></p>
+
+          <!-- IMG -->
+          <div class="special-img"><img src="./images/finished-test-page-small.png" alt=""></div>
+          <!-- xxx -->
+
+          <p>Here, we have only really scratched the surface of HTML. To find out more, go to MDN's <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Learning HTML</a> topic.</p>
         </section>
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
       </main>
       <!-- ///////////////////////////////////////////////////////////////////////// -->
     </div>
+
     <!-- FOOTER
     ============================================================================== -->
     <footer>
+      <div class="developer-info">
+        <p>Copyright&copy; 2021|Created by Débora Bucci</p>
+        <a class="icon-links" href="#"><i class="fab fa-github-alt"></i></a>
+        <a class="icon-links" href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
       <div>
-        <p></p>
+        <p>All content in this page was taken from MDN Web Docs' page: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML basics</a>.</p>
+        <p>This is only a project, therefore is not the official MDN's page.</p>
       </div>
     </footer>
     <!-- ///////////////////////////////////////////////////////////////////////// -->
