@@ -44,7 +44,7 @@ code {
   color: var(--main-color);
 }
 
-.special-p {
+.note {
   background: var(--color-11);
 }
 
@@ -58,6 +58,14 @@ code {
 
 .text {
   color: var(--color-4);
+}
+
+footer a {
+  color: var(--color-3);
+}
+
+main a {
+  color: var(--secondary-color);
 }
 
 /* gradient use : */
@@ -74,7 +82,7 @@ code {
 
 nav,
 footer,
-img,
+.img-div img,
 .gradient-line {
   background: var(--main-gradient);
 }
@@ -87,13 +95,28 @@ img,
   border-bottom: 10px solid var(--color-6);
 }
 
-.color--1,
-.special-p {
+.color--1 {
   border-left: 5px solid var(--secondary-color);
 }
 
 .color--2 {
   border-left: 5px solid var(--main-color);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* HOVER & FOCUS  
+---------------------------------------------*/
+footer a:hover,
+footer a:focus,
+main a:hover,
+main a:focus {
+  color: var(--color-3);
+  border-bottom: 1px solid var(--color-3);
+}
+
+.icon-links:hover {
+  transform: scale(1.5);
+  border: transparent;
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
