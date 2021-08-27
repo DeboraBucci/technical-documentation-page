@@ -54,8 +54,7 @@
     color: var(--main-color);
   }
 
-  footer a:hover,
-  footer a:focus {
+  footer a:hover {
     color: var(--secondary-color);
     border: none;
   }

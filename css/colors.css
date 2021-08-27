@@ -107,9 +107,7 @@ footer,
 /* HOVER & FOCUS  
 ---------------------------------------------*/
 footer a:hover,
-footer a:focus,
-main a:hover,
-main a:focus {
+main a:hover {
   color: var(--color-3);
   border-bottom: 1px solid var(--color-3);
 }
