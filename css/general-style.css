@@ -105,6 +105,12 @@ code {
 .alt-text-example {
   width: 50px;
 }
+
+.sticky {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* FOOTER
