@@ -32,6 +32,10 @@
     width: 350px;
   }
 
+  .img-div img {
+    max-width: 60%;
+  }
+
   main {
     width: 60%;
   }
@@ -40,12 +44,19 @@
     padding-top: 50px;
   }
 
-  img {
-    max-width: 700px;
+  footer {
+    margin-left: 300px;
+    padding: 10px 0 0 20px;
+    background: var(--color-12);
   }
 
-  footer {
-    height: 120px;
-    background: var(--color-12);
+  footer a {
+    color: var(--main-color);
+  }
+
+  footer a:hover,
+  footer a:focus {
+    color: var(--secondary-color);
+    border: none;
   }
 }
