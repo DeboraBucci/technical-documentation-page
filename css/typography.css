@@ -33,10 +33,14 @@ li {
   line-height: 1.5rem;
 }
 
-nav a {
-  text-decoration: none;
-}
-
 li {
   font-weight: 300;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
