@@ -116,6 +116,7 @@ code {
 /* FOOTER
 ---------------------------------------------*/
 footer {
+  padding: 0 30px;
   height: 200px;
   display: flex;
   flex-direction: column;
