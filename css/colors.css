@@ -112,11 +112,6 @@ main a:hover {
   border-bottom: 1px solid var(--color-3);
 }
 
-.icon-links:hover {
-  transform: scale(1.5);
-  border: transparent;
-}
-
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* SCROLLBAR
