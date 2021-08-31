@@ -39,4 +39,7 @@ const checkSize = function () {
 checkSize();
 
 // Event listener added so the checkSize can still be called after resize :
-window.addEventListener("resize", checkSize);
+window.addEventListener("resize", function () {
+  nav.classList.remove("sticky");
+  checkSize();
+});
